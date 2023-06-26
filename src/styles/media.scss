@@ -1,0 +1,135 @@
+///////////////!!!!!!!!///////////////// 
+@media (max-width: 767px) {
+	.brand-list__wrapper {
+		display: none;
+	}
+	.about__unwrap-brandlist {
+		display: none;
+	}
+	.service-list__desctop {
+		display: none;
+	}
+}
+@media (min-width: 974px) {
+	.brand-list__wrapper {
+		display: grid;
+		grid-template-columns: auto auto auto auto !important;
+	}
+}
+
+@media (min-width: 767px) {
+	.brand-list__wrapper-mobile {
+		display: none;
+	}
+	.brand-list__wrapper {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		height: 160px;
+		overflow-y: hidden;
+		margin-bottom: 20px;
+		transition-duration: .5s;
+		transition-property: height;
+	}
+	.brand-list__item {
+		width: 220px;
+		min-width: 200px;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+	.about__unwrap-brandlist {
+		position: relative;
+		display: inline-block;
+		margin: auto;
+	}
+	.arrow-brandlist {
+		border: solid $colorGrey;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 2px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		position: absolute;
+		&:hover {
+			border-color: $colorAquamarine;
+		}
+		&:focus {
+			border-color: $colorAquamarine;
+		}
+		&:nth-child(1) {
+			left: 20px;
+			top: 20px;
+		}
+		&:nth-child(2) {
+			left: 20px;
+			top: 25px;
+		}
+	}
+	.about__read-brandlist {
+		margin-top: 16px;
+		margin-left: 48px;
+	}
+	.service-name {
+		display: flex;
+		padding-bottom: 16px;
+		p {
+			&:first-child {
+				width: 40%;
+				color: $colorGrey;
+			}
+			&:not(:first-child) {
+				width: 20%;
+				color: $colorGrey;
+			}
+		}
+	}
+	.service-table {
+		background-color: $colorWhite;
+		border-radius: 5px;
+	}
+	.service-table__tr {
+		position: relative;
+		display: flex;
+		padding: 24px;
+		width: calc(100% - 20px);
+		border-bottom: 1px solid $colorWhite;
+		margin-left: 10px;
+		p {
+			&:first-child {
+				width: 40%;
+			}
+			&:not(:first-child) {
+				width: 20%;
+			}
+		}
+	}
+	.service-table__button {
+		top: 15px;
+	}
+	.about-price {
+		padding-top: 24px;
+		width: 40%;
+	}
+	.left-sidebar {
+		height: 204vh !important;
+	}
+	.application {
+		height: 204vh !important;
+	}
+	.application-exit__button {
+		position: relative;
+		right: 70px;
+	}
+	.callback-exit__button {
+		position: relative;
+		right: 70px;
+	}
+	.mainfooter {
+		display: flex;
+		flex-direction: row !important;
+		align-items: flex-start;
+		min-height: 100px !important;
+		p {
+			width: 33.3%;
+		}
+	}
+}

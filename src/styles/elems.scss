@@ -1,0 +1,179 @@
+///////////!!!!!!!!!!!/ //////////
+
+/* ////////////////FIRST BLOCK////////////////////////// */
+/* ////////////////////////////////////////////////////// */
+
+
+.arrow {
+	border: solid $colorGrey;
+	border-width: 0 2px 2px 0;
+	display: inline-block;
+	padding: 2px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	&:hover {
+		border-color: $colorAquamarine;
+	}
+	&:focus {
+		border-color: $colorAquamarine;
+	}
+	&:nth-child(1) {
+		left: 20px;
+		top: 20px;
+	}
+	&:nth-child(2) {
+		left: 20px;
+		top: 25px;
+	}
+}
+.icon {
+	width: 40px;
+	height: 40px;
+	background-color: $colorPink;
+	border-radius: 50%;
+	cursor: pointer;
+	background-size: 18px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 16px;
+}
+.grey-line {
+	width: 2px;
+	height: 32px;
+	background-color: $colorea;
+}
+.icon1 {
+	background-image: url('/img/menu.svg');
+	margin-right: 40px;
+}
+.icon2 {
+	background-image: url('/img/phone.svg');
+}
+.icon3 {
+	background-image: url('/img/message.svg');
+}
+.icon4 {
+	background-image: url('/img/Group3.png');
+}
+.icon5 {
+	background-image: url('/img/keys.svg');
+}
+.icon6 {
+	background-image: url('/img/search.svg');
+}
+.icon7 {
+	background-image: url('/img/search-nav.svg');
+}
+.icon8 {
+	background-image: url('/img/exit-nav.svg');
+}
+/* //////////////////////////////////////////////////// */
+/* ////////SECOND BLOCK///////////////////////////////// */
+
+
+
+/* /////JS ELEMS ///////// */
+.brand-list__item-button {
+	&::after {
+		content: ">";
+		color: $colorPink;
+		font-size: 22px;
+	}
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid $colorPink;
+	border-radius: 50%;
+}
+.brand-list__item {
+	max-width: 250px;
+	height: 72px;
+	border: 1px solid $colorea;
+	border-radius: 5px;
+	background-color: $colorWhite;
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		left: 16px;
+	}
+}
+.btn-active {
+	height: 470px !important;
+	transition-duration: .6s;
+	transition-property: height;
+}
+.sidebar-active {
+	position: absolute;
+	margin-left: 340px;
+	opacity: 1;
+}
+.applictation-active {
+	display: block !important;
+	margin-right: 560px !important;
+	transition-duration: .6s;
+	position: fixed;
+	opacity: 1;
+}
+.opacity {
+	opacity: .2 !important;
+	transition-duration: .6s;
+}
+
+/* ////////////////THIRD BLOCK////////////////// */
+/* ///////////////////////////////////////////// */
+
+
+/* //////////////////////// */
+.service-card {
+	width: 220px;
+	height: 150px;
+	p {
+		padding: 16px;
+	}
+	.brand-list__item-button {
+		margin-top: 80px;
+	}
+}
+.price-card {
+	min-width: 250px;
+	padding: 14px;
+	min-height: 180px;
+	h4 {
+		font-size: 14px;
+		color: $colorGrey;
+		margin-top: 4px;
+		position: relative;
+	}
+	p {
+		margin-top: 4px;
+	}
+}
+.price-card__button {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	width: 120px;
+	height: 32px;
+	font-size: 16px;
+	font-weight: bold;
+	color: $colorWhite;
+	border-radius: 20px;
+	background-color: $colorPink;
+	span {
+		position: relative;
+		top: 2px;
+		left: 8px;
+	}
+}
+.aplication-button {
+	position: relative;
+	width: 135px;
+	top: 25px;
+	left: 150px;
+}
