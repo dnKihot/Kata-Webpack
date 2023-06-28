@@ -16,8 +16,8 @@
       
       <div class="header__right-side">
         <div class="header__contact-list">
-          <button class="icon icon2"></button>
-          <button class="icon icon3"></button>
+          <button class="icon icon__phone"></button>
+          <button class="icon icon__message"></button>
           <button class="icon icon4"></button>
         </div>
           
@@ -575,36 +575,39 @@
 
 <aside class="left-sidebar" style="opacity: 1;">  
   <header class="left-sidebar__header"> 
-    <button class=" icon icon8"></button>
+    <button class=" icon icon__close"></button>
     <div class="header__logo"></div>
-    <button class="icon icon7"></button>
+    <button class="icon icon__search"></button>
   </header>
-  <main class="left-sidebar__main">  
-    <nav>  
-      
-        <li class="left-sidebar__li"><a href="##">Услуги и сервисы</a></li>
-        <li class="left-sidebar__li"><a href="##">Корпоративным клиент</a></li>
-        <li class="left-sidebar__li"><a href="##">Продавцам техники</a></li>
-        <li class="left-sidebar__li"><a href="##">Партнерам</a></li>
-        <li class="left-sidebar__li"><a href="##">Производителям</a></li>
-        <li class="left-sidebar__li"><a href="##">Наши сервисные центр</a></li>
-        <li class="left-sidebar__li"><a href="##">Контакты</a></li>
-      
+    <nav class="left-sidebar__nav">        
+      <li><a href="##">Услуги и сервисы</a></li>
+      <li><a href="##">Корпоративным клиент</a></li>
+      <li><a href="##">Продавцам техники</a></li>
+      <li><a href="##">Партнерам</a></li>
+      <li><a href="##">Производителям</a></li>
+      <li><a href="##">Наши сервисные центр</a></li>
+      <li><a href="##">Контакты</a></li>
     </nav>      
-  </main> 
+  
 
   <footer class="left-sidebar__footer">
     <div class="left-sidebar__footer-contacts-area">
-      <button class="icon icon2"></button>
-      <button class="icon icon3"></button>
+      <button class="icon icon__phone"></button>
+      <button class="icon icon__message"></button>
       <button class="icon icon4"></button>
     </div>
     <a href="#33">mail@cps.com</a>
     <a href="#33">8 800 890 8900</a>
     <div class="left-sidebar__footer-lang-list">
-      <button>RU</button>
-      <button>EN</button>
-      <button>CH</button>
+      <input type="radio" name="lang" id="rb1" checked> 
+      <label for="rb1">RU</label>
+      
+      <input type="radio" name="lang" id="rb2">
+      <label for="rb2">EN</label>  
+      
+      <input type="radio" name="lang" id="rb3">
+      <label for="rb3">CH</label>
+    
     </div>  
   </footer>
 
@@ -614,19 +617,19 @@
 
 <aside class="application">  
   <header class="application-header"> 
-    <button class=" icon icon8 application-exit__button"></button>
+    <button class=" icon icon__close application-exit__button"></button>
     <h2>Обратная связь</h2>
   </header>
   <main class="application-main">  
     <form action="">
       <label for="">
-        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Имя" required>
       </label>
       <label for="">
-        <input type="tel" placeholder="Телефон">
+        <input type="tel" placeholder="Телефон" required>
       </label>
       <label for="">
-        <input type="email" placeholder="Электронная почта">
+        <input type="email" placeholder="Электронная почта" required>
       </label>
       <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
     </form>
@@ -641,13 +644,13 @@
 
 <aside class="callback">  
   <header class="application-header"> 
-    <button class=" icon icon8 callback-exit__button"></button>
+    <button class=" icon icon__close callback-exit__button"></button>
     <h2>Заказать звонок</h2>
   </header>
   <main class="application-main">  
     <form action="">
       <label for="">
-        <input type="tel" placeholder="Телефон">
+        <input type="tel" placeholder="Телефон" required>
       </label>
     </form>
   </main> 

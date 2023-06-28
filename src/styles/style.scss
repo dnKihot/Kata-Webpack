@@ -382,7 +382,7 @@ li {
 	align-items: center;
 	justify-content: space-around;
 }
-.left-sidebar__main {
+.left-sidebar__nav {
 	padding: 24px 16px;
 	margin-bottom: 110px;
 	background-color: $colorWhite;
@@ -451,14 +451,24 @@ li {
 	margin-bottom: 15px;
 }
 .left-sidebar__footer-lang-list {
-	button {
-		font-size: 16px;
-		margin-right: 10px;
-		&:first-child {
-			color: $colorGrey;
-		}
-	}
+  display: flex;
+  
+  input[type="radio"]:checked, 
+  input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -999px;
+  }
+  input[type="radio"]:checked + label, 
+  input[type="radio"]:not(:checked) + label {
+    cursor: pointer;
+    font-size: 18px;
+    padding-right: 8px;
+  }
+
+  input[type="radio"]:checked + label {color: $colorGrey;}
+  
 }
+
 
 /* //////////////// */
 
@@ -483,7 +493,15 @@ li {
 	background-color: $colorWhite;
 	width: 100%;
 	padding: 0;
+  input {
+		&:required {
+			border-color: $colorAquamarine;
+      background-color: rgb(242, 249, 252);
+    }
+	}
+
 }
+
 .application-header {
 	h2 {
 		font-size: 24px;

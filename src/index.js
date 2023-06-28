@@ -68,7 +68,7 @@ const sidebar = document.querySelector('.left-sidebar')
 const wrapper = document.querySelector('.wrapper') 
 const application = document.querySelector('.application')
 const callbac = document.querySelector('.callback')
-const exitButtons = document.querySelectorAll('.icon8')
+const exitButtons = document.querySelectorAll('.icon__close')
 
 
 
@@ -88,11 +88,11 @@ document.addEventListener('click', function(e) {
   } 
   /////////////////////////////// 
   
-  if (target.className.includes('icon2')) {
+  if (target.className.includes('icon__phone')) {
     application.classList.add('applictation-active')
   }
   if (target.closest('.wrapper') &&
-    !target.className.includes('icon2') ||
+    !target.className.includes('icon__phone') ||
     target == exitButtons[1]) {
       wrapper.classList.remove('opacity')  
       application.classList.remove('applictation-active')
@@ -100,19 +100,19 @@ document.addEventListener('click', function(e) {
 
 // ///////////////////////////
 
-  if (target.className.includes('icon3')) {
+  if (target.className.includes('icon__message')) {
       callbac.classList.add('applictation-active')
   }
   if (target.closest('.wrapper') &&
-    !target.className.includes('icon3') ||
+    !target.className.includes('icon__message') ||
       target == exitButtons[2]) {
       wrapper.classList.remove('opacity')  
       callbac.classList.remove('applictation-active')
   }
   
   if (target.className.includes('icon1') ||
-    target.className.includes('icon2') ||
-    target.className.includes('icon3')) {
+    target.className.includes('icon__phone') ||
+    target.className.includes('icon__message')) {
     wrapper.classList.add('opacity')
   }
 });

@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+
 const mode = process.env.NODE_ENV || 'development';
 
 const devMode = mode === 'development';
@@ -10,7 +11,7 @@ const devtool = devMode ? 'source-map' : undefined;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode,
+  mode: 'production',
   target,
   devtool,
   devServer: {
